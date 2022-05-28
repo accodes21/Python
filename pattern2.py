@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 23 14:53:46 2022
 
-@author: HP
-"""
 import time
 for x in range(0,6):
     n=1

@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 28 15:08:05 2022
-
-@author: HP
-"""
 
 for x in range(0,6):
     for y in range(0,x+1):
