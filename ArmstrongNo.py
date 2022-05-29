@@ -1,5 +1,5 @@
 
-n=int(input("ENter n"))
+n=int(input("Enter number:"))
 x=len(str(n))
 sum=0
 temp=n
