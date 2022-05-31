@@ -24,11 +24,9 @@ head.direction = "stop"
 
 #Food in the game
 food = turtle.Turtle()
-d = ["red","yellow","blue"]
-colors = random.choice(d)
 food.speed(0)
 food.shape("circle")
-food.color(colors)
+food.color("red")
 food.penup()
 food.goto(0, 100)
 
@@ -117,6 +115,12 @@ while True:
         x = random.randint(-270, 270)
         y = random.randint(-270, 270)
         food.goto(x, y)
+        d = ["red","yellow","blue"]
+        colors = random.choice(d)
+        food.color(colors)
+        e = ["circle","square","triangle"]
+        shapes = random.choice(e)
+        food.shape(shapes)
         
         
         #adding new segment
