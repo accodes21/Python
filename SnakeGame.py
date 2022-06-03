@@ -39,7 +39,7 @@ pen.penup()
 pen.hideturtle()
 pen.goto(0, 250)
 pen.write("Score : 0  High Score : 0", align="center",
-          font=("candara", 24, "bold"))
+          font=("Times New Roman", 24, "bold"))
 
 
 #Assigning key values
@@ -108,7 +108,7 @@ while True:
         
         pen.clear()
         pen.write("Score : {} High Score : {} ".format(
-            score, high_score), align="center", font=("candara", 24, "bold"))
+            score, high_score), align="center", font=("Times New Roman", 24, "bold"))
         
     #checking collision with food
     if head.distance(food) < 20:
@@ -138,7 +138,7 @@ while True:
             high_score = score
         pen.clear()
         pen.write("Score : {} High Score : {} ".format(
-            score, high_score), align="center", font=("candara", 24, "bold"))
+            score, high_score), align="center", font=("Times New Roman", 24, "bold"))
         
     #moving segments in reverse order
     for i in range(len(segments)-1,0,-1):
@@ -168,7 +168,7 @@ while True:
             delay = 0.1
             pen.clear()
             pen.write("Score : {} High Score : {} ".format(
-                score, high_score), align="center", font=("candara", 24, "bold"))
+                score, high_score), align="center", font=("Times New Roman", 24, "bold"))
     time.sleep(delay)
 
 turtle.done()
