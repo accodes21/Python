@@ -18,7 +18,7 @@ print("Rating:",yt.rating)
 
 print(yt.streams.filter(progressive=True))
 
-ys = yt.streams.get_by_itag('22')
+ys = yt.streams.get_by_itag('18')
 
 #Downloading
 print("***DOWNLOADING***")
