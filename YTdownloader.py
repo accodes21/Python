@@ -16,9 +16,15 @@ print("Length of Video:",yt.length,"seconds")
 #Rating of Video
 print("Rating:",yt.rating)
 
-print(yt.streams.filter(progressive=True))
+x = input("Do you want video or audio(v/a): ")
+if x=="v":
+    print(yt.streams.filter(progressive=True))
+    ys = yt.streams.get_by_itag('18')
 
-ys = yt.streams.get_by_itag('18')
+else:
+    print(yt.streams.filter(only_audio=True))
+    ys = yt.streams.get_by_itag('251')
+
 
 #Downloading
 print("***DOWNLOADING***")
