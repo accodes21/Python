@@ -19,7 +19,7 @@ print("Rating:",yt.rating)
 x = input("Do you want video or audio(v/a): ")
 if x=="v":
     print(yt.streams.filter(progressive=True))
-    ys = yt.streams.get_by_itag('18')
+    ys = yt.streams.get_by_itag('22')
 
 else:
     print(yt.streams.filter(only_audio=True))
